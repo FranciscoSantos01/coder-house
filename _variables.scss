@@ -1,0 +1,25 @@
+$primary:red;
+$secondary:black;
+$common:white;
+$wolf:lightgray;
+
+
+$colors: (
+    $primary: $primary,
+    $secondary: $secondary,
+    $common: $common,
+    $wolf: $wolf,
+    
+);
+
+@each $key , $val in $colors {
+    bg-#{$key}{
+        background-color: $val;
+    }
+    text-#{$key}{
+        color: $val
+    }
+};
+
+
+    $background:#3D0000;
